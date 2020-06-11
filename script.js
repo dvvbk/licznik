@@ -13,10 +13,4 @@ let countDown = new Date('Aug 24, 2020 00:00:00').getTime(),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-      if (distance < 0) {
-        clearInterval(x);
-        'Już!;
-      }
-
     }, second)
